@@ -43,8 +43,43 @@ function reset(){
 }
 
 /* filterTemples Function */
+function filterTemples(temples) {
+    reset()
+    let filter = document.getElementById("filtered").value;
+
+    switch(filter) {
+        case "utah":
+            let utahTemples = temples.filter(temple => temple.location.toLowerCase().includes("utah"));
+            displayTemples(utahTemples);
+            break
+    }
+
+    switch(filter) {
+        case "notutah":
+            let nonUtahTemples = temples.filter(temple => !(temple.location.toLowerCase().includes("utah")));
+            displayTemples(nonUtahTemples);
+            break
+    }
+
+    switch(filter) {
+        case "older":
+            let olderTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1950);
+            displayTemples(olderTemples);
+            break
+    }
+
+    switch(filter) {
+        case "all":
+            let allTemples = temples.filter(temple => temple.templeName);
+            displayTemples(allTemples);
+            break
+    }
+
+}
 
 
 getTemples();
 
 /* Event Listener */
+
+document.querySelector("#filtered").addEventListener("change", () => {filterTemples(templeList)});
