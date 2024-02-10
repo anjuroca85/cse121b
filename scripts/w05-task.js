@@ -76,12 +76,17 @@ function filterTemples(temples) {
     }
 
     switch(filter){
+        /*As a note in the extra activity:
+        I will use the spread operator to create a shallow copy of the temples array.
+        I will apply the sort method to the new array ensuring the original temple array 
+        remains unchanged and only the sorted data is assigned to sortedTemples.
+        */
         case "sort":
             let sortedTemples = [...temples].sort((a, b) => a.templeName.localeCompare(b.templeName));
             displayTemples(sortedTemples);
             break;
     }
-    
+
 }
 
 
