@@ -75,6 +75,13 @@ function filterTemples(temples) {
             break
     }
 
+    switch(filter){
+        case "sort":
+            let sortedTemples = [...temples].sort((a, b) => a.templeName.localeCompare(b.templeName));
+            displayTemples(sortedTemples);
+            break;
+    }
+    
 }
 
 
