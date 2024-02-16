@@ -6,6 +6,9 @@
 }
 
 /* HTML Selectors */
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
 
 nav {
     background-color: black;
@@ -310,7 +313,7 @@ footer {
 
 /* w06-styles.css */
 
-body {
+body #weekSix {
     font-family: 'Roboto', Helvetica, sans-serif;
     margin: 0;
     display: flex;
@@ -348,11 +351,4 @@ body {
   .revealed {
     background-color: #eee;
   }
-  
-  /* Media Query for Low-Resolution Displays (e.g., mobile devices) */
-  /* @media only screen and (max-width: 375px) {
-    .joke {
-        flex: 0 0 100%; /* Full width for small screens 
-    }
-  } */
   
