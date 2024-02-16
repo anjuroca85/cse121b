@@ -35,7 +35,7 @@ async function fetchJokes() {
     button.textContent = punchline;
     // Disable the button after revealing the punchline
     button.disabled = true;
-    // Optional: Add styling to indicate that the answer has been revealed
+    // Add styling to indicate that the answer has been revealed
     button.classList.add('revealed');
   }
   
