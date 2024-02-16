@@ -1,6 +1,9 @@
 // w06-task script.js
-document.body.style.background = "blue";
+
+//The following was used just for testing purposes but it was set as comment:
+//document.body.style.background = "blue";
 //setTimeout(() => document.body.style.background = "", 3000);
+//Test completed
 
 async function fetchJokes() {
     const response = await fetch('https://official-joke-api.appspot.com/random_ten');
