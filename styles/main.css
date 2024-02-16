@@ -356,9 +356,9 @@ body {
   }
   
   /* Media Query for Low-Resolution Displays (e.g., mobile devices) */
-  @media only screen and (max-width: 375px) {
+  /* @media only screen and (max-width: 375px) {
     .joke {
-        flex: 0 0 100%; /* Full width for small screens */
+        flex: 0 0 100%; /* Full width for small screens 
     }
-  }
+  } */
   
